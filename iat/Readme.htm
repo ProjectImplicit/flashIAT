@@ -1,0 +1,286 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Macromedia Flash 8 Local Settings Folder Classes Readme</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+BODY {
+	FONT-SIZE: 12px; FONT-FAMILY: Geneva, Arial, Helvetica, san-serif
+}
+TD {
+	FONT-SIZE: 12px; FONT-FAMILY: Geneva, Arial, Helvetica, san-serif
+}
+.welcome {
+	FONT-WEIGHT: normal; FONT-SIZE: 28px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.tablehead {
+	FONT-WEIGHT: bold; FONT-SIZE: 16px; COLOR: #ffffff; FONT-FAMILY: Geneva, Arial, Helvetica, san-serif; BACKGROUND-COLOR: #333399
+}
+.copyright {
+	FONT-SIZE: 10px; FONT-FAMILY: "Times New Roman", Times, serif
+}
+.team {
+	FONT-SIZE: 14px; FONT-FAMILY: Geneva, Arial, Helvetica, san-serif
+}
+</style>
+
+<meta content="MSHTML 5.50.4522.1800" name="GENERATOR"></head>
+<body bgcolor="#ffffff" link="#333399">
+<p class="welcome" align="center"><font color="#333399">Macromedia Flash 8 <br>
+Classes Readme</font></p>
+<blockquote>
+  <blockquote>
+    <blockquote>  
+      <div align="center"><a href="#e">English</a> | <a href="#cs">简体中文</a> | <a href="#ct">繁體中文</a> |<a href="#f"> Fran&ccedil;ais</a> | <a href="#g">Deutsch</a> | <a href="#i">Italiano</a> | <a href="#j">日本語</a> | <a href="#k">한국어</a> |   <a href="#s">Espa&ntilde;ol</a> </div>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<table align="center" border="0" cellpadding="1" cellspacing="2" width="636">
+  <tr>
+    <td height="80"><p><a name="e"></a><strong>English</strong></p>
+        <p>This Readme file only applies to the classes found in the user-specific  Local Settings folder, not the classes found in the First Run folder. The  contents of the First Run folder are copied to the Local Settings folder every  time Flash 8 is launched. </p>
+        <p>The Classes folder that contains this Readme file is part of  the default classpath used by the ActionScript 2.0 compiler in Flash 8. Flash 8  displays the default classpath in the ActionScript 2.0 Settings dialog, which  is available from the ActionScript category in the Preferences dialog.</p>
+        <p>The Classes folder contains six items: </p>
+        <ol>
+          <li>Readme.htm (this file)</li>
+          <li>FP7 (folder)</li>
+          <li>FP8 (folder)</li>
+          <li>mx (folder)</li>
+          <li>toplevel.as (file)</li>
+          <li>aso (folder; created automatically the first  time an ActionScript 2.0 class is compiled)</li>
+        </ol>
+        <p>The Classes folder is represented in the classpath by the  entry $(LocalData)/Classes. However, that entry presents a special case. Unlike  all other classpath entries, which map to a single target folder, the  $(LocalData)/Classes entry is mapped internally by the compiler to the  following two separate target folders:</p>
+        <ol>
+          <li>The Classes folder, where the compiler can find  the mx package and the toplevel.as file.</li>
+          <li>Either the FP7 or FP8 folder, depending on the version  of the .swf file being exported (as set in the Publish Settings dialog). If the  .swf file's version is Flash Player 7 or lower, then the FP7 folder (and not  the FP8 folder) will be included in the classpath. But if the .swf file's version  is Flash Player 8, then the FP8 folder (and not the FP7 folder) will be included  in the classpath.</li>
+        </ol>
+        <p>While the FP7 and FP8 folders may resemble packages, they  are not packages; they are simply normal folders that are conditionally included  in the classpath by the compiler. This is an intentional deviation from the  typical behavior of the classpath, and is the only such special case of its  kind made by the ActionScript 2.0 compiler. </p>
+        <p>Examples when publishing to Flash Player 8:<br>
+      Classes\FP8\TextField\StyleSheet.as maps to class TextField.StyleSheet.<br>
+      Classes\mx\accessibility\AccImpl.as maps to class  mx.accessibility.AccImpl.</p></td>
+  </tr>
+  <tr>
+    <td height="20">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="80"><p><a name="cs"></a><strong>简体中文</strong></p>
+        <p>此自述文件只适用于位于用户特定的 Local Settings 文件夹中的类，而不适用于位于 First Run 文件夹中的类。每次启动 Flash 8 时，First Run 文件夹中的内容都会被复制到 Local Settings 文件夹中。 </p>
+<p>包含此自述文件的 Classes 文件夹是 ActionScript 2.0 编译器在 Flash 8 中所使用的默认类路径的一部分。在 Flash 8 中，默认类路径显示在“ActionScript 2.0 设置”对话框中。在“首选参数”对话框中选择“ActionScript”类别即可找到“ActionScript 2.0 设置”对话框。</p>
+<p>Classes 文件夹包含以下六项： </p>
+<ol>
+<li>Readme.htm（此自述文件）</li>
+<li>FP7（文件夹）</li>
+<li>FP8（文件夹）</li>
+<li>mx（文件夹）</li>
+<li>toplevel.as（文件）</li>
+<li>aso（文件夹；在第一次编译 ActionScript 2.0 类时自动创建）</li>
+</ol>
+<p>Classes 文件夹在类路径中以条目 $(LocalData)/Classes 来表示。然而，此条目表示的是一种特殊情况。与所有其它映射到单个目标文件夹的类路径条目不同，$(LocalData)/Classes 将通过编译器被内部映射到以下两个独立的目标文件夹中：</p>
+<ol>
+<li>Classes 文件夹；编译器可在这里找到 mx 包和 toplevel.as 文件。</li>
+<li>FP7 或者 FP8 文件夹；取决于被导出的 .swf 文件的版本（可在“发布设置”对话框中进行设置）。如果 .swf 文件版本为 Flash Player 7 或更低版本，类路径中将包括 FP7 文件夹（而不是 FP8 文件夹）。如果 .swf 文件版本为 Flash Player 8，则类路径中将包括 FP8 文件夹（而不是 FP7 文件夹）。</li>
+</ol>
+<p>FP7 和 FP8 文件夹可能类似于包，但它们不是包。它们不过是由编译器有条件地包括在类路径中的普通文件夹。它有意违背了类路径的典型行为，也是 ActionScript 2.0 编译器对此类型的唯一特例。 </p>
+<p>发布到 Flash Player 8 的示例：<br>
+Classes\FP8\TextField\StyleSheet.as 映射到 TextField.StyleSheet 类。<br>
+Classes\mx\accessibility\AccImpl.as 映射到 mx.accessibility.AccImpl 类。</p></td>
+  </tr>
+  <tr>
+    <td height="20">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="80"><p><strong><a name="ct"></a>繁體中文</strong> </p>
+        <p>這個 Readme 檔案僅適用於使用者 Local Settings 資料夾中的類別，而不適用於 First Run 資料夾中的類別。First Run 資料夾的內容會在每次啟動 Flash 8 時複製到 Local Settings 資料夾。 </p>
+<p>包含這個 Readme 檔案的 Classes 資料夾是 Flash 8 中的 ActionScript 2.0 編譯器使用的預設類別路徑的一部分，Flash 8 會顯示預設類別路徑於「ActionScript 2.0 設定」對話方塊中，「ActionScript 2.0 設定」對話方塊可以從「偏好設定」對話方塊中的「ActionScript 類別」開啟。</p>
+<p>Classes 資料夾包含六個項目： </p>
+<ol>
+<li>Readme.htm (這個檔案)</li>
+<li>FP7 (資料夾)</li>
+<li>FP8 (資料夾)</li>
+<li>mx (資料夾)</li>
+<li>toplevel.as (檔案)</li>
+<li>aso (第一次編譯 ActionScript 2.0 類別時自動建立的資料夾)</li>
+</ol>
+<p>Classes 資料夾在類別路徑中會以 $(LocalData)/Classes 項目呈現。但是所呈現的項目為特例，與所有其它對應至單一目標資料夾的類別路徑項目不同的是，$(LocalData)/Classes 項目則是由編譯器對應至內部的下面兩個分開的目標資料夾：</p>
+<ol>
+<li>Classes 資料夾，內含編譯器可以找到的 mx 套件與 toplevel.as 檔案。</li>
+<li>FP7 或 FP8 資料夾，依據所匯出的 .swf 檔案版本而不同 (在「發佈設定」對話方塊中可以設定 SWF 版本)。如果 .swf 檔案的版本為 Flash Player 7 或更早版本，類別路徑中則為 FP7 資料夾 (不是 FP8 資料夾)。但是如果 .swf 檔案的版本為 Flash Player 8，類別路徑中則為 FP8 資料夾 (不是 FP7 資料夾)。</li>
+</ol>
+<p>FP7 與 FP8 資料夾與套件很類似，但是並非套件，只是由編譯器指定於類別路徑的一般資料夾。這是類別路徑行為之故意的特殊狀況，而且也是 ActionScript 2.0 編譯器執行這種行為的唯一特例。 </p>
+<p>發佈至 Flash Player 8 時的範例：<br>
+Classes\FP8\TextField\StyleSheet.as 對應至 TextField.StyleSheet 類別。<br>
+Classes\mx\accessibility\AccImpl.as 對應至 mx.accessibility.AccImpl 類別。</p></td>
+  </tr>
+  <tr>
+    <td height="20">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="80"><p><a name="f"></a><strong>Fran&ccedil;ais</strong></p>
+        <p>Ce fichier Lisez-moi ne concerne que les classes qui se trouvent dans le dossier Local Settings de l'utilisateur, les classes du dossier First Run ne sont pas concern&eacute;es. Le contenu du dossier First Run est copi&eacute; dans le dossier Local Settings &agrave; chaque d&eacute;marrage de Flash 8. </p>
+<p>Le dossier Classes qui contient le pr&eacute;sent fichier Lisez-moi fait partie du chemin de classes par d&eacute;faut utilis&eacute; par le compilateur ActionScript 2.0 de Flash 8. Flash 8 affiche le chemin de classes par d&eacute;faut dans la bo&icirc;te de dialogue de param&eacute;trage d'ActionScript 2.0 (cat&eacute;gorie ActionScript de la bo&icirc;te de dialogue Pr&eacute;f&eacute;rences).</p>
+<p>Le dossier Classes contient six &eacute;l&eacute;ments : </p>
+<ol>
+  <li>Lisez-moi.htm (ce fichier)</li>
+  <li>FP7 (dossier)</li>
+  <li>FP8 (dossier)</li>
+  <li>mx (dossier)</li>
+  <li>toplevel.as (fichier)</li>
+  <li>aso (dossier cr&eacute;&eacute; automatiquement lors de la premi&egrave;re compilation d'une classe ActionScript 2.0)</li>
+</ol>
+<p>Dans le chemin de classes, le dossier Classes est repr&eacute;sent&eacute; par l'entr&eacute;e $(LocalData)/Classes. Toutefois, cette entr&eacute;e repr&eacute;sente un cas particulier. A la diff&eacute;rence des autres entr&eacute;es de chemins de classes, qui renvoient &agrave; un m&ecirc;me dossier cible, l'entr&eacute;e $(LocalData)/Classes est mapp&eacute;e en interne par le compilateur sur les deux dossiers cibles suivants :</p>
+<ol>
+  <li>Le dossier Classes, dans lequel le compilateur recherche le package mx et le fichier toplevel.as.</li>
+  <li>Soit le dossier FP7, soit le dossier FP8, selon la version du fichier .swf export&eacute; (en fonction du param&eacute;trage dans la bo&icirc;te de dialogue Param&egrave;tres de publication). Si le fichier .swf est export&eacute; pour la version 7 ou ant&eacute;rieure de Flash Player, c'est le dossier FP7 (et non FP8) qui est inclus dans le chemin de classes. Si le fichier .swf est export&eacute; pour la version 8 de Flash Player, c'est alors le dossier FP8 (et non FP7) qui est inclus dans le chemin de classes.</li>
+</ol>
+<p>Les dossiers FP7 et FP8 ressemblent &agrave; des packages, mais ce n'en sont pas : ce sont des dossiers normaux qui sont inclus conditionnellement dans le chemin de classes par le compilateur. Cette exception volontaire (par rapport au comportement typique d'un chemin de classes) est la seule exception de ce type effectu&eacute;e par le compilateur ActionScript 2.0. </p>
+<p>Exemples lors de la publication pour Flash Player 8 :<br> Classes\FP8\TextField\StyleSheet.as pointe sur la classe TextField.StyleSheet.<br> Classes\mx\accessibility\AccImpl.as pointe sur la classe mx.accessibility.AccImpl.</p></td>
+  </tr>
+  <tr>
+    <td height="20">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="80"><p><a name="g"></a><strong>Deutsch</strong></p>
+        <p>Diese Readme-Datei bezieht sich ausschlie&szlig;lich auf die Klassen im benutzerspezifischen Ordner <B>Lokale Einstellungen</B> und nicht auf Dateien im Ordner <B>First Run</B>. Die Inhalte von <B>First Run</B> werden bei jedem Start von Flash&nbsp;8 in den Ordner <B>Lokale Einstellungen</B> kopiert. </p>
+<p>Der <B>Classes</B>-Ordner, in dem sich auch diese Readme-Datei befindet, geh&ouml;rt auch zum Standardklassenpfad des in Flash&nbsp;8 enthaltenen ActionScript&nbsp;2.0-Compilers. In Flash&nbsp;8 wird der Standardklassenpfad im Dialogfeld <B>ActionScript&nbsp;2.0-Einstellungen</B> angezeigt, das im Dialogfeld <B>Voreinstellungen</B> in der Kategorie <B>ActionScript</B> ge&ouml;ffnet werden kann.</p>
+<p>Der Classes-Ordner enth&auml;lt die folgenden sechs Objekte: </p>
+<ol>
+  <li>Readme.htm (diese Datei)</li>
+  <li>FP7 (Ordner)</li>
+  <li>FP8 (Ordner)</li>
+  <li>mx (Ordner)</li>
+  <li>toplevel.as (Datei)</li>
+  <li>aso (Ordner; wird beim ersten Kompilieren einer ActionScript&nbsp;2.0-Klasse automatisch erstellt)</li>
+</ol>
+<p>Der <B>Classes</B>-Ordner wird im Klassenpfad durch den Eintrag <B>$(LocalData)/Classes</B> referenziert. Allerdings stellt dieser Eintrag einen Sonderfall dar: Im Unterschied zu allen anderen Klassenpfadeintr&auml;gen, die jeweils auf einen bestimmten einzelnen Zielordner verweisen, wird der Eintrag <B>$(LocalData)/Classes</B> intern vom Compiler zwei unterschiedlichen Zielordnern zugewiesen, n&auml;mlich</p>
+<ol>
+  <li>dem Classes-Ordner, in dem der Compiler das mx-Paket und die Datei <B>toplevel.as</B> findet und</li>
+  <li>entweder dem <B>FP7</B>- oder dem <B>FP8</B>-Ordner, je nachdem, welche Version die zu exportierende SWF-Datei hat (wird im Dialogfeld <B>Einstellungen f&uuml;r Ver&ouml;ffentlichungen</B> eingestellt). Wird die SWF-Datei auf Flash Player&nbsp;7 oder fr&uuml;her eingestellt, so wird der Ordner <B>FP7</B> (nicht <B>FP8</B>) in den Klassenpfad aufgenommen. Bei Flash Player&nbsp;8 ist an Stelle von <B>FP7</B> der Ordner <B>FP8</B> im Klassenpfad enthalten.</li>
+</ol>
+<p>Auch wenn die Ordner <B>FP7</B> und <B>FP8</B> wie Pakete aussehen, so handelt es sich doch um normale Ordner, die der Compiler den Umst&auml;nden entsprechend in den Klassenpfad einf&uuml;gt. Hierbei handelt es sich um eine beabsichtigte Abweichung vom Standardverhalten des Klassenpfads und den einzigen Sonderfall im Verhalten des ActionScript&nbsp;2.0-Compilers. </p>
+<p>Beispiele f&uuml;r eine Ver&ouml;ffentlichung nach Flash Player&nbsp;8:<br> <B>Classes\FP8\TextField\StyleSheet.as</B> wird der Klasse <B>TextField.StyleSheet</B> zugewiesen.<br> <B>Classes\mx\accessibility\AccImpl.as</B> wird der Klasse <B>mx.accessibility.AccImpl</B> zugewiesen.</p></td>
+  </tr>
+  <tr>
+    <td height="20">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="80"><p><a name="i"></a><strong>Italiano</strong></p>
+        <p>Questo file Leggimi riguarda unicamente le classi contenute nella cartella Impostazioni locali, non quelle della cartella First Run. Il contenuto della cartella First Run viene copiato nella cartella Local Settings ogni volta che Flash 8 viene avviato. </p>
+<p>La cartella Classes che contiene questo file Leggimi fa parte del percorso di classe (classpath) predefinito utilizzato dal compilatore ActionScript 2 in Flash 8. Flash 8 visualizza il percorso di classe predefinito nella finestra di dialogo Impostazioni ActionScript 2.0, attivabile dalla categoria ActionScript della finestra di dialogo Preferenze.</p>
+<p>La cartella Classes contiene sei elementi: </p>
+<ol>
+  <li>Readme.htm (questo file)</li>
+  <li>FP7 (cartella)</li>
+  <li>FP8 (cartella)</li>
+  <li>mx (cartella)</li>
+  <li>toplevel.as (file)</li>
+  <li>aso (cartella; creata automaticamente la prima volta che viene compilata una classe ActionScript 2.0)</li>
+</ol>
+<p>La cartella Classes &egrave; rappresentata nel percorso di classe dalla voce $(LocalData)/Classes. Tuttavia, tale voce costituisce un caso speciale. A differenza di tutte le altre voci del percorso di classe, che sono mappate a un'unica cartella di destinazione, la voce $(LocalData)/Classes &egrave; mappata internamente dal compilatore alle due seguenti cartelle di destinazione:</p>
+<ol>
+  <li>La cartella Classes, dove il compilatore pu&ograve; trovare il pacchetto mx e il file toplevel.as.</li>
+  <li>La cartella FP7 o FP8, a seconda della versione del file .swf da esportare (impostata nella finestra di dialogo Impostazioni pubblicazione). Se la versione del file .swf &egrave; Flash Player 7 o inferiore, nel percorso di classe viene inclusa la cartella FP7 (e non FP8). Al contrario, se la versione del file .swf &egrave; Flash Player 8, nel percorso di classe viene inclusa la cartella FP8 (e non FP7).</li>
+</ol>
+<p>Bench&eacute; le cartelle FP7 e FP8 possano assomigliare a dei pacchetti, in realt&agrave; non lo sono, bens&igrave; si tratta di normali cartelle che possono essere incluse nel percorso di classe dal compilatore. Questa &egrave; un'eccezione intenzionale rispetto al comportamento tipico del percorso di classe, e si tratta dell'unica eccezione speciale di questo tipo fatta dal compilatore ActionScript 2.0. </p>
+<p>Esempi in caso di pubblicazione per Flash Player 8:<br> Classes\FP8\TextField\StyleSheet.as &egrave; mappato alla classe TextField.StyleSheet.<br> Classes\mx\accessibility\AccImpl.as &egrave; mappato alla classe mx.accessibility.AccImpl.</p></td>
+  </tr>
+  <tr>
+    <td height="20">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="80"><p><a name="j"></a><strong>日本語</strong></p>
+        <p>この "お読みください" ファイルの内容は、各ユーザーの "Local Settings" フォルダに含まれるクラスのみに該当し、"First Run" フォルダに含まれるクラスには該当しません。"First Run" フォルダの内容は、Flash 8 の起動時に "Local Settings" フォルダへコピーされます。 </p>
+<p>この "お読みください" ファイルがある "Classes" フォルダは、Flash 8 の ActionScript 2.0 コンパイラが使用するデフォルトのクラスパスに含まれます。デフォルトのクラスパスは、[環境設定] ダイアログボックスの [ActionScript] カテゴリにある [ActionScript 2.0 設定] ダイアログボックスに表示されます。</p>
+<p>"Classes" フォルダには、次の 6 つのファイルおよびフォルダが含まれます。 </p>
+<ol>
+<li>お読みください.htm (このファイル)</li>
+<li>FP7 (フォルダ)</li>
+<li>FP8 (フォルダ)</li>
+<li>mx (フォルダ)</li>
+<li>toplevel.as (ファイル)</li>
+<li>aso (フォルダ。ActionScript 2.0 のクラスを初めてコンパイルするときに自動的に作成されます。)</li>
+</ol>
+<p>クラスパスでは、"Classes" フォルダは "$(LocalData)/Classes" というエントリで表されます。しかし、これは特殊な性質を持つエントリです。通常、クラスパスエントリは単一のターゲットフォルダにマップされますが、"$(LocalData)/Classes" エントリだけはコンパイラによって内部的に次の 2 つの異なるターゲットフォルダにマップされます。</p>
+<ol>
+<li>"Classes" フォルダ。コンパイラが使用する "mx" パッケージおよび "toplevel.as" ファイルはこのフォルダにあります。</li>
+<li>"FP7" フォルダまたは "FP8" フォルダ。書き出す .swf ファイルのバージョン（[パブリッシュ設定] ダイアログボックスで設定）に応じて決まります。設定されている .swf ファイルのバージョンが Flash Player 7 以前である場合、クラスパスには "FP7" フォルダが含まれ ("FP8" フォルダは含まれません)、Flash Player 8 の場合には "FP8" フォルダが含まれます ("FP7" フォルダは含まれません)。</li>
+</ol>
+<p>"FP7" フォルダと "FP8" フォルダはパッケージのように見えますが、パッケージではありません。コンパイラにより条件付きでクラスパスに含められる、単なる通常のフォルダです。これは、クラスパスの一般的な特性を意図的に変更したものであり、ActionScript 2.0 コンパイラがこのような特殊な動作をする事例は他にありません。 </p>
+<p>Flash Player 8 にパブリッシュする場合の例を次に示します。<br>
+"Classes\FP8\TextField\StyleSheet.as" は、クラス TextField.StyleSheet にマップされます。<br>
+"Classes\mx\accessibility\AccImpl.as" は、クラス mx.accessibility.AccImpl にマップされます。</p></td>
+  </tr>
+  <tr>
+    <td height="20">&nbsp;</td>
+  </tr>
+  <tbody> 
+    <tr> 
+      <td height="80">
+<p><strong><a name="k"></a>한국어</strong></p>
+<p>이 추가 정보 파일은 사용자별 Local Setting 폴더의 클래스에만 적용되며 First Run 폴더의 클래스에는 적용되지 않습니다. First Run 폴더의 내용은 Flash 8을 시작할 때마다 Local Setting 폴더로 복사됩니다. </p>
+<p>이 추가 정보 파일이 포함되어 있는 Classes 폴더는 Flash 8에서 ActionScript 2.0 컴파일러가 사용하는 기본 클래스 경로의 일부입니다. Flash 8에서 기본 클래스 경로는 환경 설정 대화 상자의 ActionScript 범주에 있는 ActionScript 2.0 설정 대화 상자에 표시됩니다.</p>
+<p>Classes 폴더에는 다음 6개의 항목이 들어있습니다. </p>
+<ol>
+  <li>Readme.htm(이 파일)</li>
+  <li>FP7(폴더)</li>
+  <li>FP8(폴더)</li>
+  <li>MX(폴더)</li>
+  <li>toplevel.as(파일)</li>
+  <li>aso(ActionScript 2.0 클래스를 처음 컴파일할 때 자동 생성되는 폴더)</li>
+</ol>
+<p>Classes 폴더는 클래스 경로에서 $(LocalData)/Classes 항목으로 표시되는데 이 항목은 일반적인 항목과는 다른 특별한 경우를 나타냅니다. 단일 대상 폴더에 매핑되는 다른 모든 클래스 경로 항목과 달리 $(LocalData)/Classes 항목은 컴파일러에 의해 내부에서 다음과 같은 두 개의 개별 대상 폴더에 매핑됩니다. </p>
+<ol>
+  <li>컴파일러를 통해 mx 패키지 및 toplevel.as 파일을 찾을 수 있는 Classes 폴더</li>
+  <li>FP7 폴더 또는 FP8 폴더(제작 설정 대화 상자에 설정된 대로 내보내진 .swf 파일의 버전에 따라 선택). .swf 파일의 버전이 Flash Player 7 이하인 경우 FP8 폴더가 아닌 FP7 폴더가 클래스 경로에 포함되지만 .swf 파일의 버전이 Flash Player 8인 경우 FP7 폴더가 아닌 FP8 폴더가 클래스 경로에 포함됩니다.</li>
+</ol>
+<p>FP7 폴더 및 FP8 폴더는 패키지처럼 보이지만 패키지는 아니며 단지 컴파일러에 의해 조건적으로 클래스 경로에 포함된 일반적인 폴더입니다. 이는 클래스 경로의 일반적인 비헤이비어가 아니라 ActionScript 2.0 컴파일러에 의해서만 발생하는 특별한 경우입니다. </p>
+<p>Flash Player 8로 제작하는 경우 예제<br>
+  \FP8\TextField\StyleSheet.as 클래스를 TextField.StyleSheet 클래스에 매핑합니다.<br>
+  \mx\accessibility\AccImpl.as 클래스를 mx.accessibility.AccImpl 클래스에 매핑합니다.</p></td>
+  </tr>
+    <tr>
+      <td height="20">&nbsp;</td>
+    </tr>
+    <tr>
+      <td height="80"><p><strong><a name="s" id="s"></a>Espa&ntilde;ol</strong></p>
+          <p>Este archivo Readme s&oacute;lo se aplica a las clases que se encuentran en la carpeta Configuraci&oacute;n local, no a las clases de la carpeta First Run. El contenido de la carpeta First Run se copia en la carpeta Configuraci&oacute;n local cada vez que se inicia Flash 8. </p>
+<p>La carpeta Classes que contiene este archivo Readme forma parte de la ruta de clases predeterminada que utiliza el compilador de ActionScript 2.0 en Flash 8. Flash 8 muestra la ruta de clases en el cuadro de di&aacute;logo Configuraci&oacute;n de ActionScript 2.0, al que puede acceder desde la categor&iacute;a ActionScript en el cuadro Preferencias.</p>
+<p>La carpeta Classes contiene seis elementos: </p>
+<ol>
+  <li>Readme.htm (este archivo)</li>
+  <li>FP7 (carpeta)</li>
+  <li>FP8 (carpeta)</li>
+  <li>mx (carpeta)</li>
+  <li>toplevel.as (archivo)</li>
+  <li>aso (carpeta; creada autom&aacute;ticamente la primera vez que se compila una clase de ActionScript 2.0)</li>
+</ol>
+<p>La carpeta Classes se representa en la ruta de clases con la entrada $(LocalData)/Classes. Sin embargo, esa entrada presenta un caso especial. A diferencia de las dem&aacute;s entradas de la ruta de clases, asignadas a una &uacute;nica carpeta de destino, la entrada $(LocalData)/Classes ha sido asignada internamente por el compilador a dos carpetas de destino diferentes:</p>
+<ol>
+  <li>La carpeta Classes, donde el compilador encuentra el paquete mx y el archivo toplevel.as.</li>
+  <li>Las carpetas FP7 o FP8, seg&uacute;n la versi&oacute;n del archivo .swf que se vaya a exportar (definida en el cuadro de di&aacute;logo Configuraci&oacute;n de publicaci&oacute;n). Si la versi&oacute;n del archivo .swf es Flash Player 7 o anterior, se incluir&aacute; la carpeta FP7 (y no FP8) en la ruta de clases. Sin embargo, si la versi&oacute;n del archivo .swf es Flash Player 8, se incluir&aacute; la carpeta FP8 (y no FP7) en la ruta de clases.</li>
+</ol>
+<p>Aunque las carpetas FP7 y FP8 parezcan paquetes, no lo son; son s&oacute;lo carpetas normales que el compilador incluye de forma condicional en la ruta de clases. Se trata de una desviaci&oacute;n intencionada del comportamiento t&iacute;pico de la ruta de clases y es el &uacute;nico caso en que el compilador ActionScript 2.0. se comporta de esta manera. </p>
+<p>Ejemplos al publicar en Flash Player 8:<br> Classes\FP8\TextField\StyleSheet.as se asigna a la clase TextField.StyleSheet.<br> Classes\mx\accessibility\AccImpl.as se asigna a la clase mx.accessibility.AccImpl.</p> </td>
+    </tr>
+  <tr> 
+    <td>&nbsp;</td>
+    </tr>
+  <tr>
+    <td>
+      <div align="center"><font size="1">Copyright (c) 1993-2005 Macromedia,
+          Inc. and its licensors. All rights reserved. Macromedia, the Macromedia
+          logo, Flash, and Macromedia Flash are trademarks or registered trademarks
+          of Macromedia, Inc. in the United States and/or other countries. Other
+          marks are the properties of their respective owners.<br>
+          <br>
+      This computer program is protected by copyright law and international treaties.
+      Unauthorized use, reproduction, or distribution of this program, or any
+      portion of it, may result in severe civil and criminal penalties, and will
+      be prosecuted to the maximum extent possible under the law.<br>
+      Notices, terms and conditions pertaining to third party software are located
+      at <a href="http://www.macromedia.com/go/thirdparty/">http://www.macromedia.com/go/thirdparty/</a> and
+      incorporated by reference herein.<br>
+        <a href="http://www.macromedia.com/">www.macromedia.com</a> </font> </div>    </td>
+  </tr>
+  </tbody> 
+</table>
+<p>&nbsp;</p>
+  <p align="center">&nbsp;</p>
+</body></html>
